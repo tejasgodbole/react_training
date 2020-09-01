@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LoginForm from './components/LoginForm/LoginForm'
 
 function App() {
+
+  const appTitle = 'MyApplication'
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Title: {appTitle}</h2>
+      <LoginForm email='username@doain.com' password='****'/>
     </div>
   );
 }
